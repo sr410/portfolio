@@ -1,0 +1,65 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/main_nav.ejs') %>
+
+<div class="container mt-5 mb-5">
+  <div class="row align-items-center">
+    <!-- left: intro text-->
+    <div class="col-md-7">
+      <h1 class="mb-3">Welcome to My Portfolio</h1>
+      <p class="lead">
+        Hello! I’m <strong>Sukhman</strong> im beginner web developer.
+        This is my first website built using <strong>Node.js</strong>, <strong>Express</strong>, and <strong>EJS</strong>.
+      </p>
+      <p>
+        On this site, you can learn more <a href="/about">about me</a>, explore some of my 
+        <a href="/project">projects</a>, and get in touch through my <a href="/contact">contact page</a>.
+      </p>
+      <a href="/project" class="btn btn-primary mt-3 me-2">View My Projects</a>
+      <a href="/contact" class="btn btn-outline-secondary mt-3">Contact Me</a>
+    </div>
+
+    <!--image -->
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="/Asset/images/me.PNG"    style="width: 400px; height: 400px; object-fit: cover;"
+ alt="Portfolio " class="img-fluid rounded shadow-sm">
+      
+    </div>
+  </div>
+
+  <!--featured Project -->
+  <div class="mt-5">
+    <h2 class="text-center mb-4">Featured Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+            <p class="card-text">My first personal portfolio built with HTML5, CSS3, and responsive design.</p>
+            <a href="https://sr410.github.io/A1-portfolio/index.html" class="btn btn-sm btn-outline-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Python Number Guessing Game</h5>
+            <p class="card-text">A simple Python game where players guess a random number. Helped me learn loops and logic.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Simple Calculator (Python Tkinter)</h5>
+            <p class="card-text">A GUI calculator that performs basic math operations, built using Python and Tkinter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>
+

@@ -1,0 +1,57 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/main_nav.ejs') %>
+
+<section class="about-section py-5">
+  <div class="container">
+
+    <!-- about intro -->
+    <div class="row justify-content-center align-items-center">
+      
+      <!-- profile ,-image -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+  <img 
+    src="/Asset/images/me.PNG" 
+    alt="Sukhmans profile photo" 
+    style="width: 400px; height: 400px; object-fit: cover;"
+  >
+</div>
+
+
+      <!-- bio Text -->
+      <div class="col-md-7">
+        <h1 class="fw-bold mb-3">About Me</h1>
+        <p class="lead">
+          Hi, I’m <strong>Sukhman</strong> a passionate learner exploring the world of programing.
+          This portfolio site is built by me using <strong>Node.js</strong>, <strong>Express</strong>, and <strong>EJS</strong>.
+          I like experimenting with new technologies.
+        </p>
+      </div>
+    </div>
+
+    <!-- skills section -->
+    <div class="skills mt-5 text-center">
+      <h4 class="mb-4">Skills I'm Learning</h4>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <span class="badge bg-primary text-white p-2">Python</span>
+        <span class="badge bg-success text-white p-2">Node.js</span>
+        <span class="badge bg-info text-white p-2">Express</span>
+        <span class="badge bg-secondary text-white p-2">EJS</span>
+        <span class="badge bg-warning text-dark p-2">HTML5</span>
+        <span class="badge bg-danger text-white p-2">CSS3</span>
+        <span class="badge bg-dark text-white p-2">GitHub</span>
+      </div>
+    </div>
+
+    <!-- vidoe section -->
+<div class="about-video mt-5 text-center">
+  <h4 class="mb-3">Inspiring Video</h4>
+  <video width="640" height="360" controls poster="/Asset/video/video1.mp4">
+    <source src="Asset/video/video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+  </div>
+</section>
+
+<%- include('./partials/footer.ejs') %>

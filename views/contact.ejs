@@ -1,0 +1,52 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/main_nav.ejs') %>
+
+<div class="container mt-5 mb-5">
+  <h1 class="text-center mb-4">Contact Me</h1>
+  <% if (typeof success !== 'undefined') { %>
+  <div class="alert alert-success" role="alert">
+    <%= success %>
+  </div>
+  <% } %>
+
+  <p class="text-center">Feel free to get in touch or send me a message below.</p>
+
+  <!-- contact info -->
+<ul class="list-unstyled text-center mb-5">
+  <li><i class="fa-solid fa-envelope me-2"></i> sukhman9044@email.com</li>
+  <li>
+    <i class="fa-brands fa-github me-2"></i>
+    <a href="https://github.com/sr410" target="_blank" class="text-decoration-none">github.com/sr410</a>
+  </li>
+  <li><i class="fa-brands fa-discord me-2"></i> sukhman4411</li>
+  <li>
+    <i class="fa-brands fa-linkedin me-2"></i>
+    <a href="https://www.linkedin.com/in/sukhman-rekhi-750318311" target="_blank" class="text-decoration-none">LinkedIn</a>
+  </li>
+</ul>
+
+
+  <!-- contact from -->
+  <div class="card shadow mx-auto" style="max-width: 600px;">
+    <div class="card-body">
+      <h5 class="card-title text-center mb-4">Send Me a Message</h5>
+      <form action="/send-email" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>
